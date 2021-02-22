@@ -55,7 +55,7 @@ public class GestorConexion {
 
     //este método consulta los datos de la tabla superbowls y los muestra todos por pantalla
     public String selectSB() {
-        String query = "SELECT * FROM SuperBowls, Equipos";
+        String query = "SELECT * FROM SuperBowls s, Equipos e WHERE e.SuperBowl.Cod_SB = s.Cod_SB";
         String salida = "";
         String aux = "";
         try {
@@ -80,7 +80,7 @@ public class GestorConexion {
 
     //este método hace lo mismo que el anterior pero sobre la tabla datos
     public String selectDatos() {
-        String query = "SELECT * FROM DatosEquipo, Equipos";
+        String query = "SELECT * FROM DatosEquipo d, Equipos e WHERE e.Datos.Cod_dato = d.Cod_dato";
         String salida = "";
         String aux = "";
         try {
@@ -108,7 +108,7 @@ public class GestorConexion {
 
     //este método hace lo mismo que los dos anteriores pero muestra los datos de todos los equipos
     public String selectEquipos() {
-        String query = "SELECT * FROM Equipos, DatosEquipo, SuperBowls";
+        String query = "SELECT * FROM Equipos e, DatosEquipo d, SuperBowls s WHERE e.Datos.Cod_dato = d.Cod_dato AND e.SuperBowl.Cod_SB = s.Cod_SB";
         String salida = "";
         String aux = "";
         try {
@@ -171,19 +171,19 @@ public class GestorConexion {
 
     //este método modifica un equipo, la seleccion del equipo es elegida por el usuario mediante un combobox que le da valor al parámetro de entrada equipoModificado y
     //los datos nuevos son, también, introduccidos por el usuario
-    public void modificar(String nombre_equipo, String ciudad, String estadio, int equipoModificado) {
+    public void modificarEquipo(String nombre_equipo, String ciudad, String estadio, int equipoModificado) {
         try {
             
             Statement sta = conn1.createStatement();
             sta.executeUpdate("UPDATE Equipos "
-                    + "SET Nombre_equipo = '" + nombre_equipo + "', Ciudad_equipo = '" + ciudad + "', Estadio_equipo = '" + estadio + "'"
-                    + "WHERE Cod_equipo = '" + equipoModificado + "';");
+                    + "SET Nombre_equipo = '" + nombre_equipo + "', Ciudad_equipo = '" + ciudad + "', Estadio_equipo = '" + estadio + "' WHERE Cod_equipo = '" + equipoModificado + "'");
             sta.close();
             System.out.println("Datos modificados correctamente");
         } catch (SQLException ex) {
             System.out.println(ex.toString());
         }
     }
+
 
     //este método inserta un campeonato dado por el usuario en su respectiva tabla
     public void insertarCampeonato(String tipo_campeonato, String numero_victorias, String fechas_victorias, int equipo_campeon) {

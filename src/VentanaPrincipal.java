@@ -57,7 +57,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jTextField_UpdateNombre = new javax.swing.JTextField();
         jTextField_UpdateCiudad = new javax.swing.JTextField();
         jTextField_UpdateEstadio = new javax.swing.JTextField();
-        jButton_UPDATE = new javax.swing.JButton();
+        jButton_UPDATEEquipo = new javax.swing.JButton();
         jPanel_Inserts = new javax.swing.JPanel();
         jTabbedPane_Inserts = new javax.swing.JTabbedPane();
         jPanel_InsertarDatos = new javax.swing.JPanel();
@@ -267,8 +267,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jTextField_UpdateEstadio.setForeground(new java.awt.Color(255, 255, 255));
         jTextField_UpdateEstadio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton_UPDATE.setBackground(new java.awt.Color(0, 204, 204));
-        jButton_UPDATE.setText("EJECUTAR");
+        jButton_UPDATEEquipo.setBackground(new java.awt.Color(0, 204, 204));
+        jButton_UPDATEEquipo.setText("EJECUTAR");
+        jButton_UPDATEEquipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_UPDATEEquipoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel_UpdatesLayout = new javax.swing.GroupLayout(jPanel_Updates);
         jPanel_Updates.setLayout(jPanel_UpdatesLayout);
@@ -283,11 +288,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     .addComponent(jLabel_SelecionarEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton_UPDATE, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
-                    .addComponent(jComboBox_Equipos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jComboBox_Equipos, 0, 186, Short.MAX_VALUE)
                     .addComponent(jTextField_UpdateNombre)
                     .addComponent(jTextField_UpdateCiudad)
-                    .addComponent(jTextField_UpdateEstadio))
+                    .addComponent(jTextField_UpdateEstadio)
+                    .addComponent(jButton_UPDATEEquipo, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
                 .addGap(133, 133, 133))
         );
         jPanel_UpdatesLayout.setVerticalGroup(
@@ -297,24 +302,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jComboBox_Equipos)
                     .addComponent(jLabel_SelecionarEquipo, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel_CambiarNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-                    .addComponent(jTextField_UpdateNombre))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_CambiarCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField_UpdateCiudad, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_CambiarEstadio, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
-                    .addComponent(jTextField_UpdateEstadio, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton_UPDATE)
-                .addGap(186, 186, 186))
+                    .addComponent(jLabel_CambiarNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_UpdateNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel_CambiarCiudad, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                    .addComponent(jTextField_UpdateCiudad))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel_UpdatesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_CambiarEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_UpdateEstadio, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton_UPDATEEquipo)
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("MODIFICAR BBDD", jPanel_Updates);
+        jTabbedPane1.addTab("MODIFICAR EQUIPOS", jPanel_Updates);
 
         jPanel_Inserts.setBackground(new java.awt.Color(0, 153, 204));
         jPanel_Inserts.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -446,7 +451,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         if (ges.GestorConexion() == 0) {
             System.out.println("Conexión establecida correctamente");
-            rellenarBoxDatos();
+            rellenarBoxEquipos();
             conectar();
         } else if (ges.GestorConexion() == 1) {
             System.out.println("No fue posible establecer una conexión");
@@ -476,8 +481,17 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jTextField_BuscarEquipo.setText("");
     }//GEN-LAST:event_jButton_BuscarActionPerformed
 
+    private void jButton_UPDATEEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_UPDATEEquipoActionPerformed
+        String idEquipo = (String) jComboBox_Equipos.getSelectedItem();
+        int equipo = Integer.parseInt(idEquipo.split(" ")[0]);
+        ges.modificarEquipo(jTextField_UpdateNombre.getText(), jTextField_UpdateCiudad.getText(), jTextField_UpdateEstadio.getText(), equipo);
+        jTextField_UpdateNombre.setText("");
+        jTextField_UpdateCiudad.setText("");
+        jTextField_UpdateEstadio.setText("");
+    }//GEN-LAST:event_jButton_UPDATEEquipoActionPerformed
+
     //este método rellena los combobox relacionados a los equipos con el método arraylist creado en la clase del gestor
-    private void rellenarBoxDatos() {
+    private void rellenarBoxEquipos() {
         //primero eimina los datos por defecto para llenarlos con los datos deseados
         jComboBox_Equipos.removeAllItems();
         ArrayList<String> listaEquipos = new ArrayList<String>();//para la foreign key de album en canciones
@@ -486,7 +500,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             jComboBox_Equipos.addItem(listaEquipos.get(i));
         }
     }
-
 
     //este método deshabilita todos los botones y vacia los combobox en caso de no estar conectado a la bbdd o de haber
     //finalizado la conexión
@@ -544,7 +557,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton_ConsultaEquipos;
     private javax.swing.JButton jButton_ConsultaSB;
     private javax.swing.JButton jButton_Desconectar;
-    private javax.swing.JButton jButton_UPDATE;
+    private javax.swing.JButton jButton_UPDATEEquipo;
     private javax.swing.JComboBox<String> jComboBox_Equipos;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabelManejo;

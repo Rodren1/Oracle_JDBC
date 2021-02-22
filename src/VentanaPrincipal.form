@@ -410,8 +410,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="MODIFICAR BBDD">
-                    <Property name="tabTitle" type="java.lang.String" value="MODIFICAR BBDD"/>
+                  <JTabbedPaneConstraints tabName="MODIFICAR EQUIPOS">
+                    <Property name="tabTitle" type="java.lang.String" value="MODIFICAR EQUIPOS"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -419,7 +419,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel_CambiarEstadio" alignment="0" max="32767" attributes="0"/>
@@ -429,11 +429,11 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButton_UPDATE" pref="186" max="32767" attributes="0"/>
-                              <Component id="jComboBox_Equipos" max="32767" attributes="0"/>
+                              <Component id="jComboBox_Equipos" pref="186" max="32767" attributes="0"/>
                               <Component id="jTextField_UpdateNombre" alignment="0" max="32767" attributes="0"/>
                               <Component id="jTextField_UpdateCiudad" alignment="0" max="32767" attributes="0"/>
                               <Component id="jTextField_UpdateEstadio" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButton_UPDATEEquipo" alignment="0" pref="186" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
                       </Group>
@@ -447,24 +447,24 @@
                               <Component id="jComboBox_Equipos" max="32767" attributes="0"/>
                               <Component id="jLabel_SelecionarEquipo" pref="26" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel_CambiarNombre" pref="26" max="32767" attributes="0"/>
-                              <Component id="jTextField_UpdateNombre" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel_CambiarCiudad" min="-2" pref="26" max="-2" attributes="0"/>
-                              <Component id="jTextField_UpdateCiudad" pref="27" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel_CambiarEstadio" alignment="3" pref="29" max="32767" attributes="0"/>
-                              <Component id="jTextField_UpdateEstadio" alignment="3" pref="27" max="32767" attributes="0"/>
+                              <Component id="jLabel_CambiarNombre" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jTextField_UpdateNombre" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jButton_UPDATE" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLabel_CambiarCiudad" pref="26" max="32767" attributes="0"/>
+                              <Component id="jTextField_UpdateCiudad" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel_CambiarEstadio" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="jTextField_UpdateEstadio" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jButton_UPDATEEquipo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="217" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -592,13 +592,16 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton_UPDATE">
+                <Component class="javax.swing.JButton" name="jButton_UPDATEEquipo">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="cc" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="EJECUTAR"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_UPDATEEquipoActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
