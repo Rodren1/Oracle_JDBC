@@ -99,17 +99,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jTabbedPane1" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="jLabelManejo" max="32767" attributes="0"/>
+                          <Component id="jLabelManejo" min="-2" pref="189" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jButton_Conectar" min="-2" pref="148" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButton_Desconectar" min="-2" pref="148" max="-2" attributes="0"/>
+                          <Component id="jButton_Conectar" min="-2" pref="130" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton_Desconectar" min="-2" pref="130" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -147,7 +148,7 @@
         <Component class="javax.swing.JButton" name="jButton_Conectar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="99" red="33" type="rgb"/>
+              <Color blue="cc" green="cc" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Conectar/Actualizar"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -163,7 +164,7 @@
         <Component class="javax.swing.JButton" name="jButton_Desconectar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="99" red="33" type="rgb"/>
+              <Color blue="cc" green="cc" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Desconectar"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -207,26 +208,29 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel_SelectSuperBowls1" max="32767" attributes="0"/>
-                              <Component id="jLabel_SelectSuperBowls" pref="209" max="32767" attributes="0"/>
-                              <Component id="jLabel_SelectDatos" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jLabel_SelectEquipo" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jButton_ConsultaEquipos" alignment="0" pref="157" max="32767" attributes="0"/>
-                                  <Component id="jButton_ConsultaDatos" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jButton_ConsultaSB" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButton_Buscar" min="-2" pref="132" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jLabel_SelectSuperBowls1" max="32767" attributes="0"/>
+                                      <Component id="jLabel_SelectSuperBowls" pref="209" max="32767" attributes="0"/>
+                                      <Component id="jLabel_SelectDatos" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jLabel_SelectEquipo" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jButton_ConsultaEquipos" alignment="0" pref="157" max="32767" attributes="0"/>
+                                          <Component id="jButton_ConsultaDatos" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jButton_ConsultaSB" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="jTextField_BuscarEquipo" min="-2" pref="157" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <Component id="jTextField_BuscarEquipo" min="-2" pref="157" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButton_Buscar" pref="142" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace pref="155" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -251,10 +255,11 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel_SelectSuperBowls1" pref="26" max="32767" attributes="0"/>
-                              <Component id="jButton_Buscar" pref="26" max="32767" attributes="0"/>
                               <Component id="jTextField_BuscarEquipo" alignment="0" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="231" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButton_Buscar" min="-2" pref="26" max="-2" attributes="0"/>
+                          <EmptySpace pref="129" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -263,7 +268,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_SelectEquipo">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="CONSULTAR EQUIPOS"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -277,7 +282,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_SelectDatos">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="CONSULTAR DATOS DEL EQUIPO"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -291,7 +296,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_SelectSuperBowls">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="CONSULTAR SUPER BOWLS DEL EQUIPO"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -353,7 +358,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_SelectSuperBowls1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="BUSCAR EQUIPO"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -428,14 +433,16 @@
                               <Component id="jLabel_SelecionarEquipo" alignment="0" min="-2" pref="209" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jComboBox_Equipos" pref="186" max="32767" attributes="0"/>
-                              <Component id="jTextField_UpdateNombre" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jTextField_UpdateCiudad" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jTextField_UpdateEstadio" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jButton_UPDATEEquipo" alignment="0" pref="186" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jTextField_UpdateEstadio" max="32767" attributes="0"/>
+                                  <Component id="jTextField_UpdateCiudad" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextField_UpdateNombre" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jComboBox_Equipos" alignment="0" pref="192" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jButton_UPDATEEquipo" min="-2" pref="123" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                          <EmptySpace pref="120" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -464,7 +471,7 @@
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jButton_UPDATEEquipo" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="217" max="32767" attributes="0"/>
+                          <EmptySpace pref="159" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -494,7 +501,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_SelecionarEquipo">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="SELECCIONAR EQUIPO A MODIFICAR"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -508,7 +515,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_CambiarNombre">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="NOMBRE NUEVO"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -522,7 +529,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_CambiarCiudad">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="CIUDAD NUEVA"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -536,7 +543,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel_CambiarEstadio">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="66" type="rgb"/>
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="ESTADIO NUEVO"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -695,7 +702,7 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="152" max="32767" attributes="0"/>
+                                  <EmptySpace pref="145" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -734,7 +741,7 @@
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jButton_InsertarDatos" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="95" max="32767" attributes="0"/>
+                                  <EmptySpace pref="37" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -743,7 +750,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Conferencia">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="CONFERENCIA"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -757,7 +764,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Division">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="DIVISI&#xd3;N"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -771,7 +778,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Propietario">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="PROPIETARIO"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -785,7 +792,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Fundacion">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="FUNDACI&#xd3;N"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -799,7 +806,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_EntradaNFL">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="ENTRADA EN LA NFL"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -813,7 +820,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_CodIDDATOS">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="C&#xd3;DIGO IDENTIFICADOR"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -966,7 +973,7 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="152" max="32767" attributes="0"/>
+                                  <EmptySpace pref="145" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -990,7 +997,7 @@
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jButton_InsertarSB" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="206" max="32767" attributes="0"/>
+                                  <EmptySpace pref="148" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -999,7 +1006,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_FechaVict">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="FECHA DE LAS VICTORIAS"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1013,7 +1020,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_CantidadVict">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="CANTIDAD DE VICTORIAS"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1027,7 +1034,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_CodIDSB">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="C&#xd3;DIGO IDENTIFICADOR"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1150,7 +1157,7 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="152" max="32767" attributes="0"/>
+                                  <EmptySpace pref="145" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1189,7 +1196,7 @@
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jButton_InsertarEquipo" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="95" max="32767" attributes="0"/>
+                                  <EmptySpace pref="37" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1198,7 +1205,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Nombre">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="NOMBRE DEL EQUIPO"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1212,7 +1219,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Ciudad">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="CIUDAD DE RESIDENCIA"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1226,7 +1233,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Estadio">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="ESTADIO DEL EQUIPO"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1240,7 +1247,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_CodIDEQUIPO">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="C&#xd3;DIGO IDENTIFICADOR"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1254,7 +1261,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_Datos">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="DATOS DEL EQUIPO"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1268,7 +1275,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel_SuperBowls">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="99" red="66" type="rgb"/>
+                              <Color blue="ff" green="ff" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="SUPER BOWLS DEL EQUIPO"/>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -1406,8 +1413,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="BORRAR TUPLAS">
-                    <Property name="tabTitle" type="java.lang.String" value="BORRAR TUPLAS"/>
+                  <JTabbedPaneConstraints tabName="BORRAR EQUIPO">
+                    <Property name="tabTitle" type="java.lang.String" value="BORRAR EQUIPO"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -1415,15 +1422,77 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="560" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jButton_Borrar" min="-2" pref="116" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel_BorrarEquipo" min="-2" pref="168" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jTextField_BorrarEquipo" min="-2" pref="203" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="154" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="390" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel_BorrarEquipo" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jTextField_BorrarEquipo" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButton_Borrar" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="254" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel_BorrarEquipo">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="66" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="NOMBRE DEL EQUIPO"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                        <BevelBorder/>
+                      </Border>
+                    </Property>
+                    <Property name="opaque" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextField_BorrarEquipo">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="33" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                        <BevelBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton_Borrar">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cc" green="cc" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="BORRAR"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_BorrarActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>

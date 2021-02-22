@@ -176,7 +176,8 @@ public class GestorConexion {
 
             Statement sta = conn1.createStatement();
             sta.executeUpdate("UPDATE Equipos "
-                    + "SET Nombre_equipo = '" + nombre_equipo + "', Ciudad_equipo = '" + ciudad + "', Estadio_equipo = '" + estadio + "' WHERE Cod_equipo = '" + equipoModificado + "'");
+                    + "SET Nombre_equipo = '" + nombre_equipo + "', Ciudad_equipo = '" + ciudad + "', Estadio_equipo = '" + estadio + 
+                    "' WHERE Cod_equipo = '" + equipoModificado + "'");
             sta.close();
             System.out.println("Datos modificados correctamente");
         } catch (SQLException ex) {
@@ -226,29 +227,7 @@ public class GestorConexion {
     public void borrarEquipo(String dato) {
         try {
             Statement sta = conn1.createStatement();
-            sta.executeUpdate("DELETE FROM equipos WHERE nombre_equipo = '" + dato + "';");
-            sta.close();
-            System.out.println("Datos borrados correctamente");
-        } catch (SQLException ex) {
-            System.out.println(ex.toString());
-        }
-    }
-
-    public void borrarDato(int dato) {
-        try {
-            Statement sta = conn1.createStatement();
-            sta.executeUpdate("DELETE FROM datos WHERE dato_equipo = '" + dato + "';");
-            sta.close();
-            System.out.println("Datos borrados correctamente");
-        } catch (SQLException ex) {
-            System.out.println(ex.toString());
-        }
-    }
-
-    public void borrarCampeonato(String campeonato, int equipo) {
-        try {
-            Statement sta = conn1.createStatement();
-            sta.executeUpdate("DELETE FROM campeonatos WHERE equipo_campeon = " + equipo + " AND tipo_campeonato = '" + campeonato + "';");
+            sta.executeUpdate("DELETE FROM Equipos WHERE nombre_equipo = '" + dato + "'");
             sta.close();
             System.out.println("Datos borrados correctamente");
         } catch (SQLException ex) {
@@ -287,7 +266,6 @@ public class GestorConexion {
             Statement sta = conn1.createStatement();
             ResultSet rs = sta.executeQuery(query);
             while (rs.next()) {
-                //se van añadiendo a la lista el id, un guion con espacios y el nombre para usarlo mas adelante en la selección de uno de los datos del combobox
                 list.add(rs.getInt("Cod_sb") + " - " + rs.getString("Fecha_victoria"));
             }
             rs.close();
@@ -309,7 +287,6 @@ public class GestorConexion {
             Statement sta = conn1.createStatement();
             ResultSet rs = sta.executeQuery(query);
             while (rs.next()) {
-                //se van añadiendo a la lista el id, un guion con espacios y el nombre para usarlo mas adelante en la selección de uno de los datos del combobox
                 list.add(rs.getInt("Cod_dato") + " - " + rs.getString("Division"));
             }
             rs.close();
