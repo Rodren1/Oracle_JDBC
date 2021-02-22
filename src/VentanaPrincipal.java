@@ -61,8 +61,41 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel_Inserts = new javax.swing.JPanel();
         jTabbedPane_Inserts = new javax.swing.JTabbedPane();
         jPanel_InsertarDatos = new javax.swing.JPanel();
+        jLabel_Conferencia = new javax.swing.JLabel();
+        jLabel_Division = new javax.swing.JLabel();
+        jLabel_Propietario = new javax.swing.JLabel();
+        jLabel_Fundacion = new javax.swing.JLabel();
+        jLabel_EntradaNFL = new javax.swing.JLabel();
+        jLabel_CodIDDATOS = new javax.swing.JLabel();
+        jTextField_Conferencia = new javax.swing.JTextField();
+        jTextField_Division = new javax.swing.JTextField();
+        jTextField_Propietario = new javax.swing.JTextField();
+        jTextField_Fundacion = new javax.swing.JTextField();
+        jTextField_EntradaNFL = new javax.swing.JTextField();
+        jTextField_CodIDDATOS = new javax.swing.JTextField();
+        jButton_InsertarDatos = new javax.swing.JButton();
         jPanel_InsertarSuperBowls = new javax.swing.JPanel();
+        jLabel_FechaVict = new javax.swing.JLabel();
+        jLabel_CantidadVict = new javax.swing.JLabel();
+        jLabel_CodIDSB = new javax.swing.JLabel();
+        jTextField_FechaVict = new javax.swing.JTextField();
+        jTextField_CantidadVict = new javax.swing.JTextField();
+        jTextField_CodIDSB = new javax.swing.JTextField();
+        jButton_InsertarSB = new javax.swing.JButton();
         jPanel_InsertarEquipos = new javax.swing.JPanel();
+        jLabel_Nombre = new javax.swing.JLabel();
+        jLabel_Ciudad = new javax.swing.JLabel();
+        jLabel_Estadio = new javax.swing.JLabel();
+        jLabel_CodIDEQUIPO = new javax.swing.JLabel();
+        jLabel_Datos = new javax.swing.JLabel();
+        jLabel_SuperBowls = new javax.swing.JLabel();
+        jTextField_Nombre = new javax.swing.JTextField();
+        jTextField_Ciudad = new javax.swing.JTextField();
+        jTextField_Estadio = new javax.swing.JTextField();
+        jTextField_CodIDEQUIPO = new javax.swing.JTextField();
+        jComboBox_Datos = new javax.swing.JComboBox<>();
+        jComboBox_SuperBowls = new javax.swing.JComboBox<>();
+        jButton_InsertarEquipo = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
 
         jDialog1.setResizable(false);
@@ -326,45 +359,348 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel_InsertarDatos.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel_Conferencia.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Conferencia.setText("CONFERENCIA");
+        jLabel_Conferencia.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Conferencia.setOpaque(true);
+
+        jLabel_Division.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Division.setText("DIVISIÓN");
+        jLabel_Division.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Division.setOpaque(true);
+
+        jLabel_Propietario.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Propietario.setText("PROPIETARIO");
+        jLabel_Propietario.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Propietario.setOpaque(true);
+
+        jLabel_Fundacion.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Fundacion.setText("FUNDACIÓN");
+        jLabel_Fundacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Fundacion.setOpaque(true);
+
+        jLabel_EntradaNFL.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_EntradaNFL.setText("ENTRADA EN LA NFL");
+        jLabel_EntradaNFL.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_EntradaNFL.setOpaque(true);
+
+        jLabel_CodIDDATOS.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_CodIDDATOS.setText("CÓDIGO IDENTIFICADOR");
+        jLabel_CodIDDATOS.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_CodIDDATOS.setOpaque(true);
+
+        jTextField_Conferencia.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Conferencia.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Conferencia.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_Division.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Division.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Division.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_Propietario.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Propietario.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Propietario.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_Fundacion.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Fundacion.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Fundacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_EntradaNFL.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_EntradaNFL.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_EntradaNFL.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_CodIDDATOS.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_CodIDDATOS.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_CodIDDATOS.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jButton_InsertarDatos.setBackground(new java.awt.Color(0, 204, 204));
+        jButton_InsertarDatos.setText("INSERTAR");
+        jButton_InsertarDatos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_InsertarDatosActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_InsertarDatosLayout = new javax.swing.GroupLayout(jPanel_InsertarDatos);
         jPanel_InsertarDatos.setLayout(jPanel_InsertarDatosLayout);
         jPanel_InsertarDatosLayout.setHorizontalGroup(
             jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 551, Short.MAX_VALUE)
+            .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton_InsertarDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                            .addComponent(jLabel_Conferencia, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Conferencia, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                            .addComponent(jLabel_Division, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Division, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                            .addComponent(jLabel_Propietario, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Propietario, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                            .addComponent(jLabel_Fundacion, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Fundacion, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                            .addComponent(jLabel_EntradaNFL, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_EntradaNFL, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                            .addComponent(jLabel_CodIDDATOS, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_CodIDDATOS, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         jPanel_InsertarDatosLayout.setVerticalGroup(
             jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
+            .addGroup(jPanel_InsertarDatosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Conferencia, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Conferencia, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Division, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Division, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Propietario, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Propietario, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Fundacion, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Fundacion, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_EntradaNFL, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_EntradaNFL, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_CodIDDATOS, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_CodIDDATOS, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton_InsertarDatos)
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
         jTabbedPane_Inserts.addTab("DATOS DE EQUIPO", jPanel_InsertarDatos);
 
         jPanel_InsertarSuperBowls.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel_FechaVict.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_FechaVict.setText("FECHA DE LAS VICTORIAS");
+        jLabel_FechaVict.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_FechaVict.setOpaque(true);
+
+        jLabel_CantidadVict.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_CantidadVict.setText("CANTIDAD DE VICTORIAS");
+        jLabel_CantidadVict.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_CantidadVict.setOpaque(true);
+
+        jLabel_CodIDSB.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_CodIDSB.setText("CÓDIGO IDENTIFICADOR");
+        jLabel_CodIDSB.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_CodIDSB.setOpaque(true);
+
+        jTextField_FechaVict.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_FechaVict.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_FechaVict.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_CantidadVict.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_CantidadVict.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_CantidadVict.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_CodIDSB.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_CodIDSB.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_CodIDSB.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jButton_InsertarSB.setBackground(new java.awt.Color(0, 204, 204));
+        jButton_InsertarSB.setText("INSERTAR");
+        jButton_InsertarSB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_InsertarSBActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_InsertarSuperBowlsLayout = new javax.swing.GroupLayout(jPanel_InsertarSuperBowls);
         jPanel_InsertarSuperBowls.setLayout(jPanel_InsertarSuperBowlsLayout);
         jPanel_InsertarSuperBowlsLayout.setHorizontalGroup(
             jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 551, Short.MAX_VALUE)
+            .addGroup(jPanel_InsertarSuperBowlsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton_InsertarSB, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel_InsertarSuperBowlsLayout.createSequentialGroup()
+                            .addComponent(jLabel_FechaVict, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_FechaVict, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarSuperBowlsLayout.createSequentialGroup()
+                            .addComponent(jLabel_CantidadVict, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_CantidadVict, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarSuperBowlsLayout.createSequentialGroup()
+                            .addComponent(jLabel_CodIDSB, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_CodIDSB, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         jPanel_InsertarSuperBowlsLayout.setVerticalGroup(
             jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
+            .addGroup(jPanel_InsertarSuperBowlsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_FechaVict, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_FechaVict, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_CantidadVict, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_CantidadVict, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarSuperBowlsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_CodIDSB, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_CodIDSB, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton_InsertarSB)
+                .addContainerGap(206, Short.MAX_VALUE))
         );
 
         jTabbedPane_Inserts.addTab("SUPER BOWLS DEL EQUIPO", jPanel_InsertarSuperBowls);
 
         jPanel_InsertarEquipos.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel_Nombre.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Nombre.setText("NOMBRE DEL EQUIPO");
+        jLabel_Nombre.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Nombre.setOpaque(true);
+
+        jLabel_Ciudad.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Ciudad.setText("CIUDAD DE RESIDENCIA");
+        jLabel_Ciudad.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Ciudad.setOpaque(true);
+
+        jLabel_Estadio.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Estadio.setText("ESTADIO DEL EQUIPO");
+        jLabel_Estadio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Estadio.setOpaque(true);
+
+        jLabel_CodIDEQUIPO.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_CodIDEQUIPO.setText("CÓDIGO IDENTIFICADOR");
+        jLabel_CodIDEQUIPO.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_CodIDEQUIPO.setOpaque(true);
+
+        jLabel_Datos.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_Datos.setText("DATOS DEL EQUIPO");
+        jLabel_Datos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_Datos.setOpaque(true);
+
+        jLabel_SuperBowls.setBackground(new java.awt.Color(102, 153, 255));
+        jLabel_SuperBowls.setText("SUPER BOWLS DEL EQUIPO");
+        jLabel_SuperBowls.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel_SuperBowls.setOpaque(true);
+
+        jTextField_Nombre.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Nombre.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Nombre.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_Ciudad.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Ciudad.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Ciudad.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_Estadio.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_Estadio.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_Estadio.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jTextField_CodIDEQUIPO.setBackground(new java.awt.Color(0, 51, 102));
+        jTextField_CodIDEQUIPO.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField_CodIDEQUIPO.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jComboBox_Datos.setBackground(new java.awt.Color(0, 51, 102));
+        jComboBox_Datos.setForeground(new java.awt.Color(255, 255, 255));
+        jComboBox_Datos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jComboBox_SuperBowls.setBackground(new java.awt.Color(0, 51, 102));
+        jComboBox_SuperBowls.setForeground(new java.awt.Color(255, 255, 255));
+        jComboBox_SuperBowls.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jButton_InsertarEquipo.setBackground(new java.awt.Color(0, 204, 204));
+        jButton_InsertarEquipo.setText("INSERTAR");
+        jButton_InsertarEquipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_InsertarEquipoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_InsertarEquiposLayout = new javax.swing.GroupLayout(jPanel_InsertarEquipos);
         jPanel_InsertarEquipos.setLayout(jPanel_InsertarEquiposLayout);
         jPanel_InsertarEquiposLayout.setHorizontalGroup(
             jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 551, Short.MAX_VALUE)
+            .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton_InsertarEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                            .addComponent(jLabel_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                            .addComponent(jLabel_Ciudad, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Ciudad, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                            .addComponent(jLabel_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                            .addComponent(jLabel_CodIDEQUIPO, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jTextField_CodIDEQUIPO, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                            .addComponent(jLabel_Datos, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jComboBox_Datos, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                            .addComponent(jLabel_SuperBowls, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jComboBox_SuperBowls, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         jPanel_InsertarEquiposLayout.setVerticalGroup(
             jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
+            .addGroup(jPanel_InsertarEquiposLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Ciudad, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Ciudad, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Estadio, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_CodIDEQUIPO, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_CodIDEQUIPO, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Datos, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox_Datos, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_InsertarEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_SuperBowls, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox_SuperBowls, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton_InsertarEquipo)
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
         jTabbedPane_Inserts.addTab("EQUIPO", jPanel_InsertarEquipos);
@@ -406,7 +742,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jTabbedPane1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabelManejo, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabelManejo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton_Conectar, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -430,7 +766,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,6 +788,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         if (ges.GestorConexion() == 0) {
             System.out.println("Conexión establecida correctamente");
             rellenarBoxEquipos();
+            rellenarBoxDatos();
+            rellenarBoxSB();
             conectar();
         } else if (ges.GestorConexion() == 1) {
             System.out.println("No fue posible establecer una conexión");
@@ -490,6 +828,37 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jTextField_UpdateEstadio.setText("");
     }//GEN-LAST:event_jButton_UPDATEEquipoActionPerformed
 
+    private void jButton_InsertarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InsertarDatosActionPerformed
+        ges.insertarDatosEquipo(jTextField_Conferencia.getText(), jTextField_Division.getText(), jTextField_Propietario.getText(),
+                jTextField_Fundacion.getText(), jTextField_EntradaNFL.getText(), Integer.parseInt(jTextField_CodIDDATOS.getText()));
+        jTextField_Conferencia.setText("");
+        jTextField_Division.setText("");
+        jTextField_Propietario.setText("");
+        jTextField_Fundacion.setText("");
+        jTextField_EntradaNFL.setText("");
+        jTextField_CodIDDATOS.setText("");
+    }//GEN-LAST:event_jButton_InsertarDatosActionPerformed
+
+    private void jButton_InsertarSBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InsertarSBActionPerformed
+        ges.insertarSuperBowls(jTextField_FechaVict.getText(), jTextField_CantidadVict.getText(), Integer.parseInt(jTextField_CodIDSB.getText()));
+        jTextField_FechaVict.setText("");
+        jTextField_CantidadVict.setText("");
+        jTextField_CodIDSB.setText("");
+    }//GEN-LAST:event_jButton_InsertarSBActionPerformed
+
+    private void jButton_InsertarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_InsertarEquipoActionPerformed
+        String datos = (String) jComboBox_Datos.getSelectedItem();
+        int dato = Integer.parseInt(datos.split(" ")[0]);
+        String sb = (String) jComboBox_SuperBowls.getSelectedItem();
+        int superBowl = Integer.parseInt(sb.split(" ")[0]);
+        ges.insertarEquipo(Integer.parseInt(jTextField_CodIDEQUIPO.getText()), jTextField_Nombre.getText(),
+                jTextField_Ciudad.getText(), jTextField_Estadio.getText(), dato, superBowl);
+        jTextField_CodIDEQUIPO.setText("");
+        jTextField_Nombre.setText("");
+        jTextField_Ciudad.setText("");
+        jTextField_Estadio.setText("");
+    }//GEN-LAST:event_jButton_InsertarEquipoActionPerformed
+
     //este método rellena los combobox relacionados a los equipos con el método arraylist creado en la clase del gestor
     private void rellenarBoxEquipos() {
         //primero eimina los datos por defecto para llenarlos con los datos deseados
@@ -498,6 +867,26 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         listaEquipos = ges.comboBoxEquipos();
         for (int i = 0; i < listaEquipos.size(); i++) {
             jComboBox_Equipos.addItem(listaEquipos.get(i));
+        }
+    }
+
+    private void rellenarBoxDatos() {
+        //primero eimina los datos por defecto para llenarlos con los datos deseados
+        jComboBox_Datos.removeAllItems();
+        ArrayList<String> listaEquipos = new ArrayList<String>();//para la foreign key de album en canciones
+        listaEquipos = ges.comboBoxDatos();
+        for (int i = 0; i < listaEquipos.size(); i++) {
+            jComboBox_Datos.addItem(listaEquipos.get(i));
+        }
+    }
+
+    private void rellenarBoxSB() {
+        //primero eimina los datos por defecto para llenarlos con los datos deseados
+        jComboBox_SuperBowls.removeAllItems();
+        ArrayList<String> listaEquipos = new ArrayList<String>();//para la foreign key de album en canciones
+        listaEquipos = ges.comboBoxSuperBowls();
+        for (int i = 0; i < listaEquipos.size(); i++) {
+            jComboBox_SuperBowls.addItem(listaEquipos.get(i));
         }
     }
 
@@ -557,18 +946,38 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton_ConsultaEquipos;
     private javax.swing.JButton jButton_ConsultaSB;
     private javax.swing.JButton jButton_Desconectar;
+    private javax.swing.JButton jButton_InsertarDatos;
+    private javax.swing.JButton jButton_InsertarEquipo;
+    private javax.swing.JButton jButton_InsertarSB;
     private javax.swing.JButton jButton_UPDATEEquipo;
+    private javax.swing.JComboBox<String> jComboBox_Datos;
     private javax.swing.JComboBox<String> jComboBox_Equipos;
+    private javax.swing.JComboBox<String> jComboBox_SuperBowls;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabelManejo;
     private javax.swing.JLabel jLabel_CambiarCiudad;
     private javax.swing.JLabel jLabel_CambiarEstadio;
     private javax.swing.JLabel jLabel_CambiarNombre;
+    private javax.swing.JLabel jLabel_CantidadVict;
+    private javax.swing.JLabel jLabel_Ciudad;
+    private javax.swing.JLabel jLabel_CodIDDATOS;
+    private javax.swing.JLabel jLabel_CodIDEQUIPO;
+    private javax.swing.JLabel jLabel_CodIDSB;
+    private javax.swing.JLabel jLabel_Conferencia;
+    private javax.swing.JLabel jLabel_Datos;
+    private javax.swing.JLabel jLabel_Division;
+    private javax.swing.JLabel jLabel_EntradaNFL;
+    private javax.swing.JLabel jLabel_Estadio;
+    private javax.swing.JLabel jLabel_FechaVict;
+    private javax.swing.JLabel jLabel_Fundacion;
+    private javax.swing.JLabel jLabel_Nombre;
+    private javax.swing.JLabel jLabel_Propietario;
     private javax.swing.JLabel jLabel_SelecionarEquipo;
     private javax.swing.JLabel jLabel_SelectDatos;
     private javax.swing.JLabel jLabel_SelectEquipo;
     private javax.swing.JLabel jLabel_SelectSuperBowls;
     private javax.swing.JLabel jLabel_SelectSuperBowls1;
+    private javax.swing.JLabel jLabel_SuperBowls;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel_InsertarDatos;
@@ -582,6 +991,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane_Inserts;
     private javax.swing.JTextArea jTextAreaQuerys;
     private javax.swing.JTextField jTextField_BuscarEquipo;
+    private javax.swing.JTextField jTextField_CantidadVict;
+    private javax.swing.JTextField jTextField_Ciudad;
+    private javax.swing.JTextField jTextField_CodIDDATOS;
+    private javax.swing.JTextField jTextField_CodIDEQUIPO;
+    private javax.swing.JTextField jTextField_CodIDSB;
+    private javax.swing.JTextField jTextField_Conferencia;
+    private javax.swing.JTextField jTextField_Division;
+    private javax.swing.JTextField jTextField_EntradaNFL;
+    private javax.swing.JTextField jTextField_Estadio;
+    private javax.swing.JTextField jTextField_FechaVict;
+    private javax.swing.JTextField jTextField_Fundacion;
+    private javax.swing.JTextField jTextField_Nombre;
+    private javax.swing.JTextField jTextField_Propietario;
     private javax.swing.JTextField jTextField_UpdateCiudad;
     private javax.swing.JTextField jTextField_UpdateEstadio;
     private javax.swing.JTextField jTextField_UpdateNombre;

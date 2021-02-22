@@ -173,7 +173,7 @@ public class GestorConexion {
     //los datos nuevos son, también, introduccidos por el usuario
     public void modificarEquipo(String nombre_equipo, String ciudad, String estadio, int equipoModificado) {
         try {
-            
+
             Statement sta = conn1.createStatement();
             sta.executeUpdate("UPDATE Equipos "
                     + "SET Nombre_equipo = '" + nombre_equipo + "', Ciudad_equipo = '" + ciudad + "', Estadio_equipo = '" + estadio + "' WHERE Cod_equipo = '" + equipoModificado + "'");
@@ -184,15 +184,12 @@ public class GestorConexion {
         }
     }
 
-
-    //este método inserta un campeonato dado por el usuario en su respectiva tabla
-    public void insertarCampeonato(String tipo_campeonato, String numero_victorias, String fechas_victorias, int equipo_campeon) {
+    public void insertarDatosEquipo(String conferencia, String division, String propietario, String fundacion, String entradaNFL, int cod_dato) {
 
         try {
             Statement sta = conn1.createStatement();
-            //el valor de la columna es introducido por el usuario, +variable+ es una forma alternativa a la de la ?
-            sta.executeUpdate("INSERT INTO `campeonatos` (`tipo_campeonato`, `numero_victorias`, `fechas_victorias`, `equipo_campeon`) "
-                    + "VALUES('" + tipo_campeonato + "', '" + numero_victorias + "', '" + fechas_victorias + "', '" + equipo_campeon + "');");
+            sta.executeUpdate("INSERT INTO DatosEquipo VALUES('" + conferencia + "', '" + division + "', '" + propietario + "', '" + fundacion + "', "
+                    + "'" + entradaNFL + "', '" + cod_dato + "')");
             sta.close();
             System.out.println("Datos añadidos correctamente");
         } catch (SQLException ex) {
@@ -200,14 +197,11 @@ public class GestorConexion {
         }
     }
 
-    //este método hace lo mismo que el anterior pero en la tabla equipos con sus datos pertinentes, todos ellos introduccidos por el usuario, excepto el id que al igual 
-    //que en el resto de tablas es auto incrementativo
-    public void insertarEquipo(String nombre_equipo, String ciudad, String estadio) {
+    public void insertarSuperBowls(String fecha_victoria, String cantidad_victorias, int cod_sb) {
 
         try {
             Statement sta = conn1.createStatement();
-            sta.executeUpdate("INSERT INTO `equipos` (`nombre_equipo`, `ciudad_equipo`, `estadio_equipo`) "
-                    + "VALUES('" + nombre_equipo + "', '" + estadio + "', '" + estadio + "');");
+            sta.executeUpdate("INSERT INTO SuperBowls VALUES('" + fecha_victoria + "', '" + cantidad_victorias + "', '" + cod_sb + "')");
             sta.close();
             System.out.println("Datos añadidos correctamente");
         } catch (SQLException ex) {
@@ -215,13 +209,13 @@ public class GestorConexion {
         }
     }
 
-    //este método hace lo mismo que los dos anteriores pero en la tabla datos
-    public void insertarDatos(String conferencia, String division, String fundacion, String entrada_nfl, int dato_equipo) {
+    public void insertarEquipo(int cod_equipo, String nombre_equipo, String ciudad_equipo, String estadio_equipo, int datos, int superBowl) {
 
         try {
             Statement sta = conn1.createStatement();
-            sta.executeUpdate("INSERT INTO datos (`conferencia`, `division`, `fundacion`, `entrada_nfl`, `dato_equipo`) "
-                    + "VALUES('" + conferencia + "', '" + division + "', '" + fundacion + "', '" + entrada_nfl + "', '" + dato_equipo + "');");
+            sta.executeUpdate("INSERT INTO Equipos VALUES"
+                    + "('" + cod_equipo + "', '" + nombre_equipo + "', '" + ciudad_equipo + "', '" + estadio_equipo + "', "
+                    + "(SELECT REF(d) FROM DatosEquipo d WHERE d.Cod_dato = '" + datos + "'), (SELECT REF(sb) FROM SuperBowls sb WHERE sb.Cod_sb = '" + superBowl + "'))");
             sta.close();
             System.out.println("Datos añadidos correctamente");
         } catch (SQLException ex) {
@@ -295,6 +289,28 @@ public class GestorConexion {
             while (rs.next()) {
                 //se van añadiendo a la lista el id, un guion con espacios y el nombre para usarlo mas adelante en la selección de uno de los datos del combobox
                 list.add(rs.getInt("Cod_sb") + " - " + rs.getString("Fecha_victoria"));
+            }
+            rs.close();
+            sta.close();
+            return list;
+        } catch (SQLException ex) {
+            System.out.println(ex.toString());
+            return null;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+    
+    public ArrayList<String> comboBoxDatos() {
+        ArrayList<String> list = new ArrayList<String>();
+
+        String query = "SELECT * FROM DatosEquipo";
+        try {
+            Statement sta = conn1.createStatement();
+            ResultSet rs = sta.executeQuery(query);
+            while (rs.next()) {
+                //se van añadiendo a la lista el id, un guion con espacios y el nombre para usarlo mas adelante en la selección de uno de los datos del combobox
+                list.add(rs.getInt("Cod_dato") + " - " + rs.getString("Division"));
             }
             rs.close();
             sta.close();
